@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Complete HTML Showcase - Part 1</title>
+
+  <!-- Meta for character encoding -->
+  <meta charset="UTF-8">
+
+  <!-- Meta for SEO -->
+  <meta name="keywords" content="HTML, demo, tutorial, forms, tags, web dev">
+  <meta name="description" content="A complete HTML showcase covering structure, formatting, media, forms, and more.">
+
+  <!-- Meta for auto-refresh (refresh every 60 seconds) -->
+  <meta http-equiv="refresh" content="60">
+
+  <!-- Meta for page redirection (uncomment the one below to test redirect after 5 seconds) -->
+  <!-- <meta http-equiv="refresh" content="5; URL=https://www.google.com"> -->
+</head>
+<body>
+
+  <header>
+    <h1>This is the heading.</h1>
+    <h3>This is the sub heading.</h3>
+  </header>
+
+  <nav>
+    <a href="#lists">Lists</a> |
+    <a href="#media">Media</a> |
+    <a href="#tables">Tables</a>
+  </nav>
+
+  <article>
+    <h2>Text and Formatting</h2>
+    <p>This is a <b>bold</b>, <i>italic</i>, <u>underline</u>, <mark>marked</mark>, <small>small</small>, <del>deleted</del>, <ins>inserted</ins>, <strong>strong</strong>, <em>emphasized</em>, <sub>subscript</sub>, <sup>superscript</sup> paragraph.</p>
+    <p>This is a span <span style="color:blue">with blue text</span>.</p>
+    <p>Line breaks:<br>First line<br>Second line</p>
+    <pre>
+function helloWorld() {
+  alert("Hello, world!");
+}
+    </pre>
+    <center><p>This text is centered using &lt;center&gt; tag (deprecated in modern HTML).</p></center>
+    <hr>
+  </article>
+
+  <section id="lists">
+    <h2>Lists</h2>
+    <ul>
+      <li>Bread</li>
+      <li>Butter</li>
+    </ul>
+    <ol>
+      <li>Step 1</li>
+      <li>Step 2</li>
+    </ol>
+    <dl>
+      <dt>HTML</dt>
+      <dd>HyperText Markup Language</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Links</h2>
+    <p>Click any of the following links:</p>
+    <a href="https://google.com" target="_blank">Open Google in new tab</a><br>
+    <a href="#media" target="_self">Jump to media section</a><br>
+    <a href="#tables" target="_parent">Jump to tables section</a><br>
+    <a href="#header" target="_top">Back to top</a>
+  </section>
+
+  <section>
+    <h2>Images & Image Map</h2>
+    <img src="sample.jpg" alt="Sample" width="150" height="150" usemap="#mymap" border="2" align="left">
+    <map name="mymap">
+      <area shape="rect" coords="0,0,50,50" href="https://example.com" alt="Example">
+      <area shape="circle" coords="75,75,25" href="https://openai.com" alt="OpenAI">
+    </map>
+    <div style="clear:both;"></div>
+  </section>
+
+  <section id="media">
+    <h2>Audio and Video</h2>
+    <audio controls>
+      <source src="sample.mp3" type="audio/mpeg">
+      Your browser does not support audio.
+    </audio><br><br>
+    <video width="320" height="240" controls autoplay muted loop>
+      <source src="sample.mp4" type="video/mp4">
+      Your browser does not support video.
+    </video>
+  </section>
+
+  <section id="tables">
+    <h2>Tables</h2>
+    <table border="1" cellspacing="2" cellpadding="4">
+      <caption align="top">Student Info</caption>
+      <tr><th>First Name</th><th>Last Name</th><th>Location</th></tr>
+      <tr><td>Aakash</td><td>Thapa</td><td>Dhading</td></tr>
+      <tr><td>Bishal</td><td>Koirala</td><td>Anamnagar</td></tr>
+    </table>
+  </section>
+
+  <footer>
+    <p>©2025 HTML Demo | Author: WebDev Tutorial</p>
+  </footer>
+</body>
+</html>
